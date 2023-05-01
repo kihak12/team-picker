@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lan</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Team draw</h1>
+            <div class="grid-content">
+                <div class="grid-item">
+                    <h2>Listes des joueurs</h2>
+                    <ul id="player-list">
+                        <li>...</li>
+                    </ul>
+                    <div class="flex-btn">
+                        <button class="success-btn" onclick="savePlayerList()">Sauvegarder la liste</button>
+                        <button class="danger-btn" onclick="deletePlayerList()">Supprimer la sauvegarde</button>
+                    </div>
+                </div>
+                <button class="randomize-btn" id="generate-teams-btn">Générer les équipes</button>
+                <div class="grid-item">
+                        <h2>Ajouter un joueur :</h2>
+                        <input type="text" id="player-input">
+                        <button id="add-player-btn">Ajouter</button>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="grid-item large-width center">
+                    <h2>Equipe 1</h2>
+                    <div id="team-1">
+                        <p>...</p>
+                    </div>
+                </div>
+                <div class="grid-item large-width center">
+                    <h2>Equipe 2</h2>
+                    <div id="team-2">
+                        <p>...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="./script.js"></script>

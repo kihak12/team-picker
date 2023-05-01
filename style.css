@@ -1,0 +1,115 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.content{
+    margin: 20px 0;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 48px;
+}
+
+.grid-content{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+ul {
+    margin: 0 0 .5em 1.5em;
+}
+
+h2 {
+    padding: 0 0 10px 0;
+}
+
+button {
+    cursor: pointer;
+    padding: 0 7px;
+}
+
+.large-width {
+    width: 40%;
+}
+
+.flex-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+.randomize-btn {
+    height: fit-content;
+    padding: 10px 20px;
+}
+
+#player-list li {
+    position: relative;
+    list-style-type: disc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+}
+
+#player-list li::before{
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    left: -15px;
+    border-radius: 50%;
+}
+
+.danger-btn {
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    line-height: 16px;
+    transition: all .2s;
+}
+
+.danger-btn:hover {
+    background-color: white;
+    color: red;
+}
+
+.success-btn {
+    border: 2px solid greenyellow;
+    background-color: greenyellow;
+    border-radius: 7px;
+    line-height: 16px;
+    transition: all .2s;
+}
+
+.success-btn:hover {
+    background-color: white;
+}
