@@ -1,5 +1,5 @@
 var playerInput = document.getElementById("player-input");
-var addPlayerBtn = document.getElementById("add-player-btn");
+var addPlayerForm = document.getElementById("add-player-form");
 var playerListHtml = document.getElementById("player-list");
 var generateTeamsBtn = document.getElementById("generate-teams-btn");
 
@@ -10,7 +10,8 @@ if(localStorage.getItem('playerList')){
     var playerList = [];
 }
 
-addPlayerBtn.addEventListener('click', e => {
+addPlayerForm.addEventListener('submit', e => {
+    e.preventDefault();
     if (playerInput.value !== '') {
 
         playerList.push(playerInput.value);
